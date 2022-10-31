@@ -5,13 +5,14 @@
     Total: {{ total }}
 </p>
 <p>
-    Today: {{ today | date:'short' }}
+    Today: {{ today | date: 'short' }}
 </p>
-<br><br><br>
-<button (click)="createNewProduct()">create</button>
-<button (click)="onShowDetail('121212')">detalle not found</button>
+<section>
+    <button (click)="createNewProduct()">create</button>
+    <button (click)="onShowDetail('121212')">detalle not found</button>
+</section>
 <div class="products--grid">
-    <app-product [product]="product"*ngFor="let product of products; " (addedProduct)="onAddToShoppingCart($event)" (showProduct)="onShowDetail($event)"></app-product>
+    <app-product [product]="product" *ngFor="let product of products; " (addedProduct)="onAddToShoppingCart($event)" (showProduct)="onShowDetail($event)"></app-product>
     <button (click)="loadMore()">Load More</button>
 </div>
 
