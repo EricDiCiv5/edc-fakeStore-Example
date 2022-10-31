@@ -1,6 +1,19 @@
+p {
+    background-color: #fffce6;
+    padding-bottom: 3.5vh;
+    &:first-of-type{
+        background: linear-gradient(to bottom, rgba(236, 193, 193, 0.75) 15%, #fffce6 30% );
+    }
+}
+
+section {
+    background-color: #fffce6;
+}
+
 .products--grid{
     display: flex;
     flex-direction: column;
+    background-color: #fffce6;
 }
 
 .product-detail {
