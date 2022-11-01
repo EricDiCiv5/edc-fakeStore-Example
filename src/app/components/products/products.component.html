@@ -17,9 +17,8 @@
 </div>
 
 <div class="product-detail" [class.active]="showProductDetail">
-    {{ statusDetail }}
     <div *ngIf="productChosen">
-        <button (click)="toggleProductDetail()">Close</button>
+        <button (click)="toggleProductDetail()"><img src="../../../assets/images/cross-mark-button.svg" alt="Cross mark"></button>
         <h1>{{ productChosen.title }}</h1>
         <swiper
         [slidesPerView]="1"
