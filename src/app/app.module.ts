@@ -15,6 +15,7 @@ import { HighlightDirective } from './directives/highlight.directive';
 import { SwiperModule } from 'swiper/angular';
 import { TimeInterceptor } from './interceptors/time.interceptor';
 import { TokenInterceptor } from './interceptors/token.interceptor';
+import { FullPageComponent } from './components/full-page/full-page.component';
 
 
 
@@ -24,7 +25,8 @@ import { TokenInterceptor } from './interceptors/token.interceptor';
     ProductComponent,
     ProductsComponent,
     NavComponent,
-    HighlightDirective
+    HighlightDirective,
+    FullPageComponent
   ],
   imports: [
     BrowserModule,
@@ -38,6 +40,6 @@ import { TokenInterceptor } from './interceptors/token.interceptor';
     { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi:true },
 
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [FullPageComponent]
 })
 export class AppModule { }
