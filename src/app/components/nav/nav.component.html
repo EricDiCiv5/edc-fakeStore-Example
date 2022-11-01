@@ -9,9 +9,10 @@
         <a href="">
             <img src="../../../assets/images/shopping-cart.svg" alt="logo">
         </a>
+        <span class="counter">{{ counter }}</span>
     </div>
     <div class="side-menu" [class.active]="activeMenu">
-        <button (click)="toggleMenu()">Close</button>
+        <button (click)="toggleMenu()"><img src="../../../assets/images/cross-mark-button.svg" alt="Cross mark"></button>
         <ul>
             <li><a href="">All</a></li>
             <li><a href="">Clothes</a></li>

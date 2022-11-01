@@ -1,8 +1,8 @@
 .show-mobile {
-    background-color: #660000;
+    background-color: #ecc1c1;
     display: block;
     box-shadow: 0px 2px 5px rgb(black, .2);
-    > div {
+    div {
       padding: 1em;
       display: flex;
       justify-content: space-between;
@@ -10,6 +10,24 @@
       button {
         border: 0;
         background: transparent;
+        img{
+          width: 50%;
+        }
+      }
+      a {
+        img{
+          width: 50%;
+        }
+      }
+      .counter {
+        border-radius: 5px;
+        background-color: #b2FF9D;
+        clip-path: polygon(0% 20%, 100% 20%, 50% 100%);
+        padding: 1.2vw;
+        position: relative;
+        top: -5vh;
+        left:  -26vw;
+        color: #000;
       }
     }
     .side-menu{
@@ -18,19 +36,57 @@
         left: 0;
         bottom: 0;
         right: 0;
-        background: #fff;
+        background-color: #dcdcdc;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         transform: translateX(-100%);
         transition: all ease-out .5s;
         &.active{
-            transform: translateX(0);
+            transform: translateX(-25%);
+        }
+        button {
+          &:first-of-type{
+              position:relative;
+              left: -15vh;
+              margin: 1.2vh auto;
+              background: none;
+              border:none;
+              background: none;
+              border-radius: 20px;
+              padding: 2.2%;
+              color: #eee;
+              img{
+                  width: 25%;
+                  color: #000;
+              }
+          }  
         }
         ul{
           li{
+            line-height: 2;
+            font-size: 4vw;
+            position:relative;
+            left: 5vh;
             a{
+              color: #865f5f;
               font-weight: bold;
+              text-decoration: none;
+              margin: 0 1em;
+              display:inline-block;
+              font-size: 4vw;
+              &::after{
+                display:block;
+                content: "";
+                width: 0%;
+                height: 2px;
+                margin-top: .25em;
+                background-color: #d08c3c;
+              }
+              &:hover::after {
+                transition: .5s all linear;
+                width: 100%;
+              }
             }
           }
         }
