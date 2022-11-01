@@ -1,3 +1,32 @@
 p, h2{
-    margin: 0;
+    margin: 1vh auto;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.66vw;
+}
+
+p:last-of-type{
+    text-align:justify;
+    margin-top: 2vh;
+    width: 80%;
+}
+
+button {
+    border: none;
+    border-radius: 20px;
+    padding: 4%;
+    width: 40%;
+    margin-top: 4%;
+    margin-right: 3%;
+    margin-left: 3%;
+    &:first-of-type{
+        background-color: #959595;
+        color: #3f1f1f;
+    }
+    &:last-of-type{
+        background-color: #d08c3c;
+        color: #fad6d6;
+    }
 }
