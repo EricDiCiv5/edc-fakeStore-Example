@@ -1,9 +1,6 @@
 p {
     background-color: #fffce6;
     padding-bottom: 3.5vh;
-    &:first-of-type{
-        background: linear-gradient(to bottom, rgba(236, 193, 193, 0.75) 15%, #fffce6 30% );
-    }
 }
 
 section {
@@ -30,7 +27,7 @@ section {
 .product-detail {
     position: fixed;
     top: 0%;
-    left: 50%;
+    left: 70%;
     bottom: 0%;
     right: 0%;
     background: #fff;
@@ -38,7 +35,62 @@ section {
     flex-direction: column;
     justify-content: flex-start;
     transition: all ease-out .5s;
+    background-color: #dcdcdc;
     transform: translateX(100%);
+    div{
+        button {
+            &:first-of-type{
+                position:relative;
+                left: 38vh;
+                margin: 1.2vh auto;
+                background: none;
+                border:none;
+                img{
+                    width: 25%;
+                    color: #000;
+                }
+            }
+            &:nth-of-type(2), &:last-of-type {
+                margin: 2vh auto;
+                background-color: #d08c3c;
+                border-radius: 20px;
+                border:none;
+                padding: 2.2%;
+                color: #eee;
+                box-shadow: 0px 0px 8px #dc8686;
+            }
+            &:nth-of-type(2){
+                position:relative;
+                left: 15vh;
+            }
+            &:last-of-type{
+                position:relative;
+                left: 31vh;
+            }   
+        }
+        h1 {
+            font-size: 2vw;
+            font-weight: bold;
+            text-align:center;
+            margin: 1vh auto;
+            padding-bottom: 1%;
+            border-bottom: 1px solid #dc8686;
+        }
+        img {
+            width: 70%;
+            margin: auto;
+            position:relative;
+            left: 10vh;
+        }
+        #descrip {
+            background-color:  rgba(236, 193, 193, 0.75) ;
+            border-radius: 20px;
+            width: 85%;
+            margin: auto;
+            box-shadow: 0px 0px 16px #f2edc4;
+            line-height: 1.75;
+        }
+    }
     &.active{
         transform: translateX(0);
     }
